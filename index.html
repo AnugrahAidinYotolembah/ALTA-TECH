@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ALTA TECH</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/2.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">ALTA TECH</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Beranda</a>
+                        <a href="#about" class="nav-item nav-link">Profile</a>
+                        <a href="#feature" class="nav-item nav-link">Layanan</a>
+                        <a href="#pricing" class="nav-item nav-link">Harga</a>
+                        <!-- <a href="#review" class="nav-item nav-link">Testimoni</a> -->
+                        <a href="#contact" class="nav-item nav-link">Kontak</a>
+                    </div>
+                    
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Jasa Pengerjaan Project AI</h1>
+                            <p class="text-white pb-3 animated slideInDown">Data Science, Machine Learning, Computer Vision, NLP untuk Mahasiswa</p>
+                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Selengkapnya</a>
+                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Hubungi Kami</a>
+                            <script>
+                                // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
+                                function showWhatsAppMessage() {
+                                    // Nomor yang akan dikirim pesan
+                                    var phoneNumber = '6285398409755';
+                                    
+                                    // Pesan yang ingin dikirimkan
+                                    var message = encodeURIComponent('Halo, saya ingin menanyakan jasa ALTA TECH');
+                                    
+                                    // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
+                                    var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
+                                    
+                                    // Buka link chat WhatsApp
+                                    window.open(whatsappUrl, '_blank');
+                                }
+                                
+                                // Event listener untuk memanggil fungsi saat tombol di klik
+                                document.getElementById('whatsappButton').addEventListener('click', function(event) {
+                                    event.preventDefault(); // Hindari navigasi ke link langsung
+                                    showWhatsAppMessage();
+                                });
+                                </script>
+
+
+
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/WhatsApp Image 2024-05-07 at 01.31.36.jpeg" alt="">
+                                <img class="img-fluid" src="img/WhatsApp Image 2024-05-07 at 02.35.16.jpeg" alt="">
+                                <img class="img-fluid" src="img/WhatsApp Image 2024-05-07 at 02.35.17.jpeg" alt="">
+                                <!-- <img class="img-fluid" src="img/Screenshot 2024-05-07 at 02.40.00.png" alt=""> -->
+                                <!-- <img class="img-fluid" src="img/screenshot-5.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Profile ALTA TECH</h5>
+                        <h1 class="mb-4">Tingkatkan Potensi Anda dengan Solusi AI</h1>
+                        <p class="mb-4" style="text-align: justify;">ALTA TECH menyediakan jasa pengerjaan project AI yang khsusus dirancang untuk memenuhi kebutuhan mahasiswa. Melalui bidang Data Science, Machine Learning, Computer Vision, dan NLP. Kami memberikan solusi inovatif untuk project - project teknologi terdepan yang memungkinkan mahasiswa untuk meraih kesuksesan akademis mereka</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">36</h2>
+                                        <p class="text-primary-gradient mb-0">Projek Portfolio</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">20</h2>
+                                        <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Selengkapnya</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/2.png" width="2000" height="2000">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Layanan di ALTA TECH</h5>
+                    <h1 class="mb-5">Layanan Project AI</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div style="width: 50px; height: 50px;">
+                                <img src="img/growth.png" alt="Logo" style="width: 150%; height: 150%; object-fit: contain;">
+                            </div>
+                            <br>
+                            <br>
+                            <h5 class="mb-3">Analysis Data</h5>
+                            <div style="text-align: justify;">
+                            <p class="m-0" >Menganalisis pola atau tren data dengan menggunakan menggunakan berbagai teknik visualisasi statistik, termasuk grafik barplot, boxplot, peta, dan histplot, serta menggunakan bahasa pemrograman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div style="width: 50px; height: 50px;">
+                                <img src="img/classification.png" alt="Logo" style="width: 150%; height: 150%; object-fit: contain;">
+                            </div>
+                            <br>
+                            <br>
+                            <h5 class="mb-3">Classifications</h5>
+                            <div style="text-align: justify;">
+                            <p class="m-0">Mengembangkan model klasifikasi yang akurat untuk mengkategorikan data ke dalam kelas atau label yang sesuai, memungkinkan pengambilan keputusan yang lebih efektif berdasarkan informasi yang tersedia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div style="width: 50px; height: 50px;">
+                                <img src="img/clustering.png" alt="Logo" style="width: 150%; height: 150%; object-fit: contain;">
+                            </div>
+                            <br>
+                            <br>
+                            <h5 class="mb-3">Clustering</h5>
+                            <div style="text-align: justify;">
+                            <p class="m-0">Menggunakan teknik clustering untuk mengelompokkan data menjadi kelompok-kelompok yang serupa, membantu dalam mengidentifikasi pola atau struktur yang tersembunyi dalam data yang kompleks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div style="width: 50px; height: 50px;">
+                                <img src="img/face-recognition.png" alt="Logo" style="width: 150%; height: 150%; object-fit: contain;">
+                            </div>
+                            <br>
+                            <br>
+                            <h5 class="mb-3">Face Recognition</h5>
+                            <div style="text-align: justify;">
+                            <p class="m-0">Berpengalaman dalam merancang sistem pengenalan wajah yang dapat mengidentifikasi individu dengan tepat, baik dalam gambar atau video, dengan aplikasi potensial dalam keamanan, pengawasan, dan pengenalan otomatis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div style="width: 50px; height: 50px;">
+                                <img src="img/object.png" alt="Logo" style="width: 150%; height: 150%; object-fit: contain;">
+                            </div>
+                            <br>
+                            <br>
+                            <h5 class="mb-3">Object Detection</h5>
+                            <div style="text-align: justify;">
+                            <p class="m-0">Mengembangkan model deteksi objek yang mampu mengidentifikasi dan membedakan objek dalam gambar, memberikan fondasi untuk aplikasi seperti deteksi kecelakaan lalu lintas, penghitungan objek, dan visi komputer lainnya.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div style="width: 50px; height: 50px;">
+                                <img src="img/sentiment-analysis.png" alt="Logo" style="width: 150%; height: 150%; object-fit: contain;">
+                            </div>
+                            <br>
+                            <br>
+                            <h5 class="mb-3">Sentiment Analysis</h5>
+                            <div style="text-align: justify;">
+                            <p class="m-0">Memiliki keahlian dalam menganalisis dan pembuatan models sentimen dari teks, baik itu dalam bentuk ulasan produk, media sosial, atau komentar online lainnya, untuk memahami opini, emosi, atau sikap dari suatu kelompok atau individu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Layanan</h5>
+                        <h1 class="mb-4">Tunjukkan kepiawaianmu dalam project AI dan Machine Learning</h1>
+                        <p class="mb-4">ALTA TECH siap untuk membentuk masa depan sistem cerdas di mana inovasi tak terbatas.</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>tim yang berpengalaman</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>solusi terbaik untuk Project Anda</p>
+                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>harga yang terjangkau</p>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Selengkapnya</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/WhatsApp Image 2024-05-07 at 01.31.36.jpeg" alt="">
+                            <img class="img-fluid" src="img/WhatsApp Image 2024-05-07 at 02.35.16.jpeg" alt="">
+                            <img class="img-fluid" src="img/WhatsApp Image 2024-05-07 at 02.35.17.jpeg" alt="">
+                            <!-- <img class="img-fluid" src="img/WhatsApp Image 2024-05-07 at 02.40.47.jpeg" alt="">
+                            <img class="img-fluid" src="img/screenshot-5.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Screenshot End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Alur kerja</h5>
+                    <h1 class="mb-5">3 alur kerja ALTA TECH</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                                
+                            </div>
+                            <h5 class="mt-4 mb-3">Hubungi tim ALTA TECH</h5>
+                            <p class="mb-0">Ceritakan project Anda dan atur jadwal konsultasi bersama tim ALTA TECH</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Pengerjaan Project</h5>
+                            <p class="mb-0">tim ALTA TECH memproses pekerjaan AI dan Machine Learning Anda</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Bimbingan dan Konsultasi</h5>
+                            <p class="mb-0">Sesi Bimbingan dan Konsultasi penjelasan terkait project AI dan Machine learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+        <!-- Download Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/Screenshot 2024-05-07 at 02.40.00.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Download</h5>
+                        <h1 class="mb-4">Download The Latest Version Of Our App</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Download End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Pilih Sekarang</h5>
+                    <h1 class="mb-5">Daftar Harga</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Project Data & AI</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Konsultasi</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Analysis Data</h4>
+                                            <span>Project Analysis Data</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>500.000,00<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/Project</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Analysis Visualisasi Data Barplot</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Analysis Visualisasi Data Heatmap</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Analysis Visualisasi Data ScatterPlot</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Analysis Visualisasi Data LinePlot</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Analysis Visualisasi Data Maps</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
+                                            <script>
+                                            // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
+                                            function showWhatsAppMessage() {
+                                            // Nomor yang akan dikirim pesan
+                                            var phoneNumber = '6285398409755';
+                                    
+                                            // Pesan yang ingin dikirimkan
+                                            var message = encodeURIComponent('Halo, saya ingin konsultasi mengenai paket Analysis Data');
+                                    
+                                            // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
+                                            var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
+                                    
+                                            // Buka link chat WhatsApp
+                                            window.open(whatsappUrl, '_blank');
+                                             }
+                                
+                                             // Event listener untuk memanggil fungsi saat tombol di klik
+                                            document.getElementById('whatsappButton').addEventListener('click', function(event) {
+                                             event.preventDefault(); // Hindari navigasi ke link langsung
+                                            showWhatsAppMessage();
+                                            });
+                                </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Pemodelan Machine Learning</h4>
+                                            <span>Project Pemodelan Machine Learning</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>1.000.000,00<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/project</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Klasifikasi data Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Clustering data Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Object Detections Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Face Recognitions Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Sentiment Analysis Text Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
+                                            <script>
+                                            // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
+                                            function showWhatsAppMessage() {
+                                            // Nomor yang akan dikirim pesan
+                                            var phoneNumber = '6285398409755';
+                                    
+                                            // Pesan yang ingin dikirimkan
+                                            var message = encodeURIComponent('Halo, saya ingin konsultasi mengenai paket Analysis Data');
+                                    
+                                            // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
+                                            var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
+                                    
+                                            // Buka link chat WhatsApp
+                                            window.open(whatsappUrl, '_blank');
+                                             }
+                                
+                                             // Event listener untuk memanggil fungsi saat tombol di klik
+                                            document.getElementById('whatsappButton').addEventListener('click', function(event) {
+                                             event.preventDefault(); // Hindari navigasi ke link langsung
+                                            showWhatsAppMessage();
+                                            });
+                                </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Website</h4>
+                                            <span>Deployment & Hosting Website</h4>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>2.000.00,00<small
+                                                class="align-bottom" style="font-size: 16px; line-height: 40px;">/Website</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Deployment & Hosting website dashboard Streamlit</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Deployment & Hosting website with flask</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
+                                            <script>
+                                            // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
+                                            function showWhatsAppMessage() {
+                                            // Nomor yang akan dikirim pesan
+                                            var phoneNumber = '6285398409755';
+                                    
+                                            // Pesan yang ingin dikirimkan
+                                            var message = encodeURIComponent('Halo, saya ingin konsultasi mengenai paket Analysis Data');
+                                    
+                                            // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
+                                            var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
+                                    
+                                            // Buka link chat WhatsApp
+                                            window.open(whatsappUrl, '_blank');
+                                             }
+                                
+                                             // Event listener untuk memanggil fungsi saat tombol di klik
+                                            document.getElementById('whatsappButton').addEventListener('click', function(event) {
+                                             event.preventDefault(); // Hindari navigasi ke link langsung
+                                            showWhatsAppMessage();
+                                            });
+                                </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-4 mx-auto">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Konsultasi Project</h4>
+                                            <span>Konsultasikan study kasus project AI Anda bersama ALTA TECH </span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>100.000,00<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Sesi </small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bertatap muka secara offline</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Saran terkait Project</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Saran judul Project</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
+                                            <script>
+                                            // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
+                                            function showWhatsAppMessage() {
+                                            // Nomor yang akan dikirim pesan
+                                            var phoneNumber = '6285398409755';
+                                    
+                                            // Pesan yang ingin dikirimkan
+                                            var message = encodeURIComponent('Halo, saya ingin paket ini');
+                                    
+                                            // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
+                                            var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
+                                    
+                                            // Buka link chat WhatsApp
+                                            window.open(whatsappUrl, '_blank');
+                                             }
+                                
+                                             // Event listener untuk memanggil fungsi saat tombol di klik
+                                            document.getElementById('whatsappButton').addEventListener('click', function(event) {
+                                             event.preventDefault(); // Hindari navigasi ke link langsung
+                                            showWhatsAppMessage();
+                                            });
+                                </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <!-- <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Testimonial</h5>
+                    <h1 class="mb-5">What Say Our Clients!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Kontak Kami</h5>
+                    <h1 class="mb-5">ALTA TECH</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4">Jika ada yang ingin Anda tanyakan atau sampaikan, silakan mengisi form di bawah ini.</p>
+                            <form id="contactForm" action="https://formspree.io/f/xleqkdpg" method="POST" target="_self">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                            <label for="name">Nama</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                            <label for="subject">Subjek</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px"></textarea>
+                                            <label for="message">Masukkan Pesan Anda</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit" id="submitBtn">Kirim</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-6 text-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Contact End -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        var form = e.target;
+        var formData = new FormData(form);
+
+        // Perform your own form submission handling here, for example, using Fetch API
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(function(response) {
+            if (response.ok) {
+                alert('Thanks! The form was submitted successfully.');
+                window.location.href = 'index.html';
+            } else {
+                return response.json().then(function(data) {
+                    // Handle error here, for example, show a message to the user
+                    alert('There was an error submitting the form. Please try again.');
+                });
+            }
+        })
+        .catch(function(error) {
+            console.error('Error:', error);
+            alert('There was an error submitting the form. Please try again.');
+        });
+    });
+</script>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Alamat</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Palu, Indonesia</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+62 853-9840-9755</p>
+                        <p><i class="fa fa-envelope me-3"></i>altatech2124@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/alta_tech24/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Quick Link</h4>
+                        <a class="btn btn-link" href="">Beranda</a>
+                        <a class="btn btn-link" href="">Layanan</a>
+                        <a class="btn btn-link" href="">Harga</a>
+                        <a class="btn btn-link" href="">Kontak</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Quick Link</h4>
+                        <a class="btn btn-link" href="">Beranda</a>
+                        <a class="btn btn-link" href="">Layanan</a>
+                        <a class="btn btn-link" href="">Harga</a>
+                        <a class="btn btn-link" href="">Kontak</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Dapatkan Informasi Terbaru</h4>
+                        <p>Langganan untuk mendapatkan informasi dan promo menarik dari media sosial ALTA TECH</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">ALTA TECH</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							<a class="border-bottom"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
