@@ -400,6 +400,9 @@
                                     
                                             // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
                                             var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
+
+					    // Debugging: Cetak URL ke konsol
+        				    console.log(whatsappUrl);
                                     
                                             // Buka link chat WhatsApp
                                             window.open(whatsappUrl, '_blank');
