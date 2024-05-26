@@ -371,135 +371,125 @@
                     </ul>
                     <div class="tab-content text-start">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Analysis Data</h4>
-                                            <span>Project Analysis Data</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>500.000,00<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/Project</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Analysis Visualisasi Data Barplot</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Analysis Visualisasi Data Heatmap</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Analysis Visualisasi Data ScatterPlot</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Analysis Visualisasi Data LinePlot</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Analysis Visualisasi Data Maps</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
-                                            <script>
-                                            // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
-                                            function showWhatsAppMessage() {
-                                            // Nomor yang akan dikirim pesan
-                                            var phoneNumber = '6285398409755';
-                                    
-                                            // Pesan yang ingin dikirimkan
-                                            var message = encodeURIComponent('Halo, saya ingin konsultasi mengenai paket Analysis Data');
-                                    
-                                            // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
-                                            var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
-
-					    // Debugging: Cetak URL ke konsol
-        				    console.log(whatsappUrl);
-                                    
-                                            // Buka link chat WhatsApp
-                                            window.open(whatsappUrl, '_blank');
-                                             }
-                                
-                                             // Event listener untuk memanggil fungsi saat tombol di klik
-                                            document.getElementById('whatsappButton').addEventListener('click', function(event) {
-                                             event.preventDefault(); // Hindari navigasi ke link langsung
-                                            showWhatsAppMessage();
-                                            });
-                                </script>
+                             <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="bg-light rounded">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4 class="text-primary-gradient mb-1">Analysis Data</h4>
+                                                <span>Project Analysis Data</span>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>500.000,00
+                                                    <small class="align-bottom" style="font-size: 16px; line-height: 40px;">/Project</small>
+                                                </h1>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Analysis Visualisasi Data Barplot</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Analysis Visualisasi Data Heatmap</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Analysis Visualisasi Data ScatterPlot</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Analysis Visualisasi Data LinePlot</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Analysis Visualisasi Data Maps</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <a id="whatsappButton1" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded border">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Pemodelan Machine Learning</h4>
-                                            <span>Project Pemodelan Machine Learning</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>1.000.000,00<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/project</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Klasifikasi data Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Clustering data Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Object Detections Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Face Recognitions Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Sentiment Analysis Text Include Algoritma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
-                                            <script>
-                                            // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
-                                            function showWhatsAppMessage() {
-                                            // Nomor yang akan dikirim pesan
-                                            var phoneNumber = '6285398409755';
-                                    
-                                            // Pesan yang ingin dikirimkan
-                                            var message = encodeURIComponent('Halo, saya ingin konsultasi mengenai paket Analysis Data');
-                                    
-                                            // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
-                                            var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
-                                    
-                                            // Buka link chat WhatsApp
-                                            window.open(whatsappUrl, '_blank');
-                                             }
-                                
-                                             // Event listener untuk memanggil fungsi saat tombol di klik
-                                            document.getElementById('whatsappButton').addEventListener('click', function(event) {
-                                             event.preventDefault(); // Hindari navigasi ke link langsung
-                                            showWhatsAppMessage();
-                                            });
-                                </script>
+                                    <div class="col-lg-4">
+                                        <div class="bg-light rounded border">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4 class="text-primary-gradient mb-1">Pemodelan Machine Learning</h4>
+                                                <span>Project Pemodelan Machine Learning</span>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>1.000.000,00
+                                                    <small class="align-bottom" style="font-size: 16px; line-height: 40px;">/Project</small>
+                                                </h1>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Klasifikasi data Include Algoritma</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Clustering data Include Algoritma</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Object Detections Include Algoritma</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Face Recognitions Include Algoritma</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Sentiment Analysis Text Include Algoritma</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <a id="whatsappButton2" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Website</h4>
-                                            <span>Deployment & Hosting Website</h4>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>2.000.00,00<small
-                                                class="align-bottom" style="font-size: 16px; line-height: 40px;">/Website</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Deployment & Hosting website dashboard Streamlit</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Deployment & Hosting website with flask</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a id="whatsappButton" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
-                                            <script>
-                                            // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
-                                            function showWhatsAppMessage() {
-                                            // Nomor yang akan dikirim pesan
-                                            var phoneNumber = '6285398409755';
-                                    
-                                            // Pesan yang ingin dikirimkan
-                                            var message = encodeURIComponent('Halo, saya ingin konsultasi mengenai paket Analysis Data');
-                                    
-                                            // URL untuk chat WhatsApp dengan nomor dan pesan yang sudah ditentukan
-                                            var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
-                                    
-                                            // Buka link chat WhatsApp
-                                            window.open(whatsappUrl, '_blank');
-                                             }
-                                
-                                             // Event listener untuk memanggil fungsi saat tombol di klik
-                                            document.getElementById('whatsappButton').addEventListener('click', function(event) {
-                                             event.preventDefault(); // Hindari navigasi ke link langsung
-                                            showWhatsAppMessage();
-                                            });
-                                </script>
+                                    <div class="col-lg-4">
+                                        <div class="bg-light rounded">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4 class="text-primary-gradient mb-1">Website</h4>
+                                                <span>Deployment & Hosting Website</span>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">Rp</small>2.000.000,00
+                                                    <small class="align-bottom" style="font-size: 16px; line-height: 40px;">/Website</small>
+                                                </h1>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Deployment & Hosting website dashboard Streamlit</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <span>Deployment & Hosting website with flask</span>
+                                                    <i class="fa fa-check text-primary-gradient pt-1"></i>
+                                                </div>
+                                                <a id="whatsappButton3" href="https://wa.me/6285398409755" target="_blank" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Pilih Paket ini</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            
+                            <script>
+                                // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
+                                function showWhatsAppMessage(phoneNumber, message) {
+                                    var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+                                    window.open(whatsappUrl, '_blank');
+                                }
+                            
+                                document.getElementById('whatsappButton1').addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Analysis Data');
+                                });
+                            
+                                document.getElementById('whatsappButton2').addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Pemodelan Machine Learning');
+                                });
+                            
+                                document.getElementById('whatsappButton3').addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Website');
+                                });
+                            </script>
                         <div id="tab-2" class="tab-pane fade p-0">
                             <div class="row g-4 justify-content-center">
                                 <div class="col-lg-4 mx-auto">
