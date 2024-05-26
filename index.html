@@ -468,28 +468,31 @@
                                 </div>
                             </div>
                             
-                            <script>
-                                // Fungsi untuk menampilkan pesan otomatis di chat WhatsApp
-                                function showWhatsAppMessage(phoneNumber, message) {
-                                    var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
-                                    window.open(whatsappUrl, '_blank');
-                                }
-                            
-                                document.getElementById('whatsappButton1').addEventListener('click', function(event) {
-                                    event.preventDefault();
-                                    showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Analysis Data');
-                                });
-                            
-                                document.getElementById('whatsappButton2').addEventListener('click', function(event) {
-                                    event.preventDefault();
-                                    showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Pemodelan Machine Learning');
-                                });
-                            
-                                document.getElementById('whatsappButton3').addEventListener('click', function(event) {
-                                    event.preventDefault();
-                                    showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Website');
-                                });
-                        </script>
+                             <script>
+				     function showWhatsAppMessage(phoneNumber, message) {
+					     var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+					     window.open(whatsappUrl, '_blank');
+				     }
+				     
+				     document.getElementById('whatsappButton1').addEventListener('click', function(event) {
+					     event.preventDefault();
+					     showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Analysis Data');
+				     });
+				     
+				     document.getElementById('whatsappButton2').addEventListener('click', function(event) {
+					     event.preventDefault();
+					     showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Pemodelan Machine Learning');
+				     });
+				     
+				     document.getElementById('whatsappButton3').addEventListener('click', function(event) {
+					     event.preventDefault();
+					     showWhatsAppMessage('6285398409755', 'Halo, saya ingin konsultasi mengenai paket Website');
+				     });
+				     document.getElementById('whatsappButton4').addEventListener('click', function(event) {
+					     event.preventDefault();
+					     showWhatsAppMessage('6285398409755', 'Halo, saya ingin paket ini');
+				     });
+			     </script>
                         <div id="tab-2" class="tab-pane fade p-0">
                             <div class="row g-4 justify-content-center">
                                 <div class="col-lg-4 mx-auto">
